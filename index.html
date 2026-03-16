@@ -4,6 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DataCanvas — Trust your data</title>
+<link rel="icon" type="image/x-icon" href="logo/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="logo/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="logo/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="logo/icon-180-dark.png">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -52,13 +57,23 @@
     border-bottom: 1px solid var(--line);
   }
   .nav-logo {
+    font-family: 'Inter', -apple-system, sans-serif;
     font-weight: 900;
     font-size: 18px;
     letter-spacing: -0.02em;
     text-decoration: none;
     color: var(--navy);
+    display: flex;
+    align-items: center;
+    gap: 6px;
   }
-  .nav-logo span { color: var(--red); }
+  .nav-logo img {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+  }
+  .nav-logo .nav-logo-text { color: var(--navy); }
+  .nav-logo .nav-logo-accent { color: var(--red); }
   .nav-links { display: flex; gap: 32px; list-style: none; }
   .nav-links a {
     font-size: 14px;
@@ -662,7 +677,7 @@
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Data<span>Canvas</span></a>
+  <a href="#" class="nav-logo"><img src="logo/icon-nobg.svg" alt="DataCanvas icon"><span class="nav-logo-text">Data<span class="nav-logo-accent">Canvas</span></span></a>
   <ul class="nav-links">
     <li><a href="#work">Work</a></li>
     <li><a href="#about">About</a></li>
