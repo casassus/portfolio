@@ -201,6 +201,45 @@
   }
   .marquee-inner .dot { color: var(--red); }
 
+  /* ===== CLIENT LOGOS MARQUEE ===== */
+  .clients-marquee-wrap {
+    background: var(--off-white);
+    padding: 12px 0;
+    overflow: hidden;
+    border-bottom: 1px solid var(--line);
+  }
+  .clients-marquee-track {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: clientsMarquee 42s linear infinite;
+  }
+  .clients-marquee-group {
+    display: flex;
+    align-items: center;
+  }
+  .client-logo-item {
+    width: 170px;
+    height: 66px;
+    margin: 0 14px;
+    border-radius: 10px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 14px;
+    flex: 0 0 auto;
+  }
+  .client-logo-item img {
+    max-width: 100%;
+    max-height: 44px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+
   /* ===== STATS ===== */
   .stats {
     display: grid;
@@ -652,6 +691,10 @@
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
   }
+  @keyframes clientsMarquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
 
   /* ===== RESPONSIVE ===== */
   @media (max-width: 900px) {
@@ -661,6 +704,13 @@
     .hero-line { font-size: 28px; white-space: normal; }
     .hero-buttons { flex-direction: column; width: 100%; max-width: 280px; }
     .btn { justify-content: center; }
+    .client-logo-item {
+      width: 128px;
+      height: 56px;
+      margin: 0 10px;
+      padding: 8px 10px;
+    }
+    .client-logo-item img { max-height: 34px; }
     .stats { grid-template-columns: 1fr 1fr; }
     .stat { padding: 32px 24px; }
     .work-grid { grid-template-columns: 1fr; }
@@ -886,6 +936,64 @@
     <span>Dashboard Design</span><span class="dot">·</span>
     <span>Analytics Strategy</span><span class="dot">·</span>
     <span>Data Architecture</span><span class="dot">·</span>
+  </div>
+</div>
+
+<!-- CLIENT LOGOS MARQUEE -->
+<div class="clients-marquee-wrap" aria-label="Clients">
+  <div class="clients-marquee-track">
+    <div class="clients-marquee-group">
+      <div class="client-logo-item"><img src="clients/client-01.jpg" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-02.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-03.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-04.svg" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-05.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-06.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-07.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-08.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-09.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-10.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-11.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-12.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-13.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-14.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-15.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-16.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-17.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-18.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-19.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-20.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-21.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-22.png" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-23.svg" alt="Client logo" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-24.webp" alt="Client logo" loading="lazy"></div>
+    </div>
+    <div class="clients-marquee-group" aria-hidden="true">
+      <div class="client-logo-item"><img src="clients/client-01.jpg" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-02.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-03.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-04.svg" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-05.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-06.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-07.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-08.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-09.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-10.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-11.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-12.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-13.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-14.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-15.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-16.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-17.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-18.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-19.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-20.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-21.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-22.png" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-23.svg" alt="" loading="lazy"></div>
+      <div class="client-logo-item"><img src="clients/client-24.webp" alt="" loading="lazy"></div>
+    </div>
   </div>
 </div>
 
